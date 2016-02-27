@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,13 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="país" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-lc-tfC">
-                                <rect key="frame" x="191" y="75" width="32" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmz-qn-So2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmz-qn-So2">
                                 <rect key="frame" x="155" y="160" width="105" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,15 +30,21 @@
                                     <action selector="botonPaisHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UqH-ia-lOE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="país" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-lc-tfC">
+                                <rect key="frame" x="191" y="59" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fbZ-lc-tfC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="HsK-fr-zSk"/>
-                            <constraint firstItem="Xmz-qn-So2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="135" id="K0u-XL-1PI"/>
-                            <constraint firstItem="fbZ-lc-tfC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="171" id="LAi-ap-dXx"/>
-                            <constraint firstItem="foc-fn-tNS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="PRS-oW-YI6"/>
-                            <constraint firstItem="foc-fn-tNS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="243" id="anT-9T-ZcQ"/>
-                            <constraint firstItem="Xmz-qn-So2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="kTo-6h-WIb"/>
+                            <constraint firstItem="fbZ-lc-tfC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8PN-qo-q6L"/>
+                            <constraint firstItem="Xmz-qn-So2" firstAttribute="top" secondItem="fbZ-lc-tfC" secondAttribute="bottom" constant="80" id="9e5-W5-edI"/>
+                            <constraint firstItem="foc-fn-tNS" firstAttribute="top" secondItem="Xmz-qn-So2" secondAttribute="bottom" constant="82" id="JjR-aI-bwA"/>
+                            <constraint firstItem="fbZ-lc-tfC" firstAttribute="centerX" secondItem="foc-fn-tNS" secondAttribute="centerX" id="nmK-0b-rnn"/>
+                            <constraint firstItem="fbZ-lc-tfC" firstAttribute="centerX" secondItem="Xmz-qn-So2" secondAttribute="centerX" id="yeh-Pa-dQG"/>
+                            <constraint firstItem="fbZ-lc-tfC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="zQD-J6-T3U"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
